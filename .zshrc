@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="bureau"
-DEFAULT_USER="stjohn3D"
+DEFAULT_USER="roakes"
 
 
 # Set to this to use case-sensitive completion
@@ -56,6 +56,7 @@ alias gfp="git fetch -p; git pull; git smart-pull; git status"
 alias gb="git branch | cut -c 3- | pick"
 alias a-s="cd ~/Projects/asset-server"
 alias r-t="cd ~/Projects/readytraining"
+alias r-t-a="cd ~/Projects/readytraining/assets"
 alias pr="cd ~/Projects"
 alias s.="sublime ."
 alias ~="cd ~/"
@@ -78,7 +79,7 @@ alias h="echo '+----------------------------------------------------------------
 |  grh - git reset --hard   |  setBack - alias back to cd to pwd     |
 |  gfp - git fetch -p;      |  cd..    - cd ..                       |
 |         git pull;         |  cx      - chmod +x build              |
-|          git smart-pull   |                                        |
+|          git smart-pull   |  r-t-a   - readytraining/Assets        |
 |            git status     |                                        |
 |  gb  - List branches(pick)|                                        |
 +--------------------------------------------------------------------+
@@ -112,8 +113,8 @@ export PATH=$PATH:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/lib/
 export PATH=$PATH:$HOME/Projects/go/bin
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:.
-export ASSET_CLIENT_DATABASE_URI=http://192.168.59.103:7474
-export ASSET_CLIENT_STORAGE=~/Projects/assetsPileOfDisks
+export ASSET_CLIENT_DATABASE_URI=http://10.70.95.52:7474
+export ASSET_CLIENT_STORAGE=/Volumes/ASSETS
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)

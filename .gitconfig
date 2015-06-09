@@ -1,19 +1,16 @@
 [user]
-	email = stjohn3d@outlook.com
-	name = St. John Peaster
+	email = richardoakes@tnwinc.com
+	name = Richard Oakes
 [core]
 	autocrlf = input
 	editor = sublime --wait
-	excludesfile = /Users/sjpeaster/.gitignore_global
 	mergetool = p4merge
 [color]
 	status = auto
 	branch = auto
 	diff = auto
 	ui = always
-[github]
-	user = StJohn3D
-	token = 617ece73980e21adee3cffe1e297c0222195150a
+
 [alias]
 	unstage = reset HEAD --
 	addrm = "!addremove() { git add -u . ; git add . ; }; addremove"
@@ -44,14 +41,6 @@
 	autocorrect = 1
 [mergetool "p4merge"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge -dw \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-[pivotal]
-	api-token = 9173ed35092e543f8b601b108f070142
-	full-name = St John Peaster
-	only-mine = true
-	append-name = true
-	interactive = 1
-	delete-branch = 1
-	verbose = 1
 [credential]
     helper = osxkeychain
 [mergetool "fugitive"]
